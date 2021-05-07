@@ -8,15 +8,87 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/tkp.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="plugin/highlight/tkp.css" id="highlight-theme">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Docker</section>
+				<!-- INTRODUCTION -->
+				<section data-state="tkp-section">
+					<img data-src="./src/img/Docker_(container_engine)_logo.svg">
+				</section>
+				<!-- SECTION 1: WAT IS DOCKER-->
+				<section>
+					<section>
+						<h1>1: WAT IS DOCKER</h1>
+					</section>
+					<section>
+						<ul>
+							<li>applicaties makkelijk verpakken</li>
+							<li>applicaties draaien in een geïsoleerde omgeving</li>
+							<li>eigen libraries/dependencies</li>
+							<li>overal dezelfde omgeving</li>
+							<li>werkt overal</li>
+						</ul>
+					</section>
+						<section>
+							<h3>container vs virtual machine</h3>
+							<ul>
+								<li>container verpakt de applicatie en dependencies</li>
+								<li>container deelt het OS van de host</li>
+								<li>docker stuurt alle containers aan</li>
+								<li>vm bevat een eigen OS</li>
+								<li>Hypervisor splitst server in meerdere servers</li>
+								<li>snel vs traag</li>
+							</ul>
+							<img data-src="./src/img/docker-containerized-appliction-blue-border_2.png" height="200">
+							<img data-src="./src/img/container-vm-whatcontainer_2.png" height="200">
+						</section>
+					<section>
+						<h3>images vs containers</h3>
+						<img data-src="./src/img/docker_1.png" height="200">
+						<ul>
+							<li>docker file: een lijst van instructies</li>
+							<li>docker image: een blauwdruk</li>
+							<li>docker container: een instantie van de blauwdruk</li>
+						</ul>
+					</section>
+				</section>
+				<!-- SECTION 2 DOCKER BASICS-->
+				<section>
+					<section>
+						<h1>2: DOCKER BASICS</h1>
+					</section>
+					<section>
+						<h2>BASIC DOCKER COMMANDS</h2>
+						<pre><code data-trim data-noescape>
+						docker ps
+						docker build
+						docker run
+						docker pull
+						docker images			
+						</code></pre>
+					</section>
+				</section>
+				<!-- SECTION 3 AAN DE SLAG-->
+				<section>
+					<section>
+						<h1>3: AAN DE SLAG</h1>
+					</section>
+					<section>
+						<h2>voor dat we beginnen</h2>
+						<pre><code data-trim data-noescape>
+						docker --version
+						docker --help
+						docker ps
+						</code></pre>
+					</section>
+
+					</section>
+				</section>
 			</div>
 		</div>
 
